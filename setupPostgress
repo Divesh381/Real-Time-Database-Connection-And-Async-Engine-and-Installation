@@ -1,0 +1,40 @@
+#How to install postgress cmd ?
+1.Update Package List:
+   .Open the terminal and run 
+   --> sudo apt update
+
+2. Install PostgreSQL and psql:
+  .Install PostgreSQL and its tools by running
+  --> sudo apt install postgresql postgresql-contrib
+
+3. Verify Installation:
+   .Check if psql is installed by typing
+   --> psql --version
+
+4. Using psql:
+   .To access the PostgreSQL command-line tool, run:
+  ---> sudo -u postgres psql
+
+5. Enable PostgreSQL to Start on Boot:
+  ---> sudo systemctl enable postgresql
+  --> sudo systemctl start postgresql    
+
+#How to using psql after installation ?
+1. Connect to the Database:
+ .Use the following command to connect to a PostgreSQL database:
+ --->psql -U your_username -d your_database_name
+   or 
+---> sudo -u postgres psql
+
+2. Basic Commands in psql:
+  i).To list all databases:
+  --> \l
+  ii) To connect to a specific database:
+  --> \c your_database_name
+  iii) To list all tables in the current database:
+   --> \dt
+  iv) To quit psql:
+  --->\q
+
+
+
